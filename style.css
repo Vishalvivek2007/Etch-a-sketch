@@ -1,0 +1,80 @@
+div{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    background-image: url(imgs/_.jpeg);
+}
+.Title{
+    color: aliceblue;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Rubik Doodle Shadow", system-ui;
+}
+.box{
+    padding-right: 15px;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    background-color: rgb(1, 4, 9);
+    height: 650px;
+    width: 920px;
+    display: flex;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(206, 215, 215);
+    height: 600px;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
+.drawing-container{
+    padding: 20px;
+    width: fit-content;
+    
+}
+.tools-container{
+    width: 200px;
+    height: 100%;
+    
+    border: solid 2px white;
+}
+
+/* This is the Footer Styles*/
+.Footer{
+    gap:4px;
+    left: 0px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: rgb(1, 4, 9);
+    height: 70px;
+    font-size: 20px;
+}
+.Footer p{
+    font-family: 'Inter';
+    color: white;
+}
+a{
+    text-decoration: underline;
+    color: white;
+    
+}
+.git-icon{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+.git-icon img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
