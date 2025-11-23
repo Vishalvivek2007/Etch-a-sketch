@@ -11,10 +11,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p class="Title">Etch-a-Sektch</p>
+    <p class="Title">Etch-a-Sketch</p>
     <div class="box">
         <div class="tools-container">
-            <input type="range" min="5" max="1000" value="50"> 
+            <div>
+                <button onclick="newgrid()">Clear</button>
+            </div>
+            <div>
+                <button onclick="togglemode()">Random Colours</button>
+            </div>
+            <div class="slider-div">
+                <label for="slider">Choose the grid dimensions</label><br />
+                <input type="range" id="slider" name="slider" min="5" max="500" value="16" list="values">
+                <datalist id="values">
+                    <option value="1" label="1"></option>
+                    <option value="16" label="16"></option>
+                    <option value="100" label="100"></option>
+                    <option value="500" label="500"></option>
+                    
+                </datalist>
+            </div>
+            
         </div>
         <div class="drawing-container">
             <div class="container">
